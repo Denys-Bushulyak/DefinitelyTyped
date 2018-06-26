@@ -415,6 +415,8 @@ export interface IndexOptions extends CommonOptions {
     // Creates a partial index based on the given filter object (MongoDB 3.2 or higher)
     partialFilterExpression?: any;
     collation?: Object;
+    // Specify a language for text index. See more at: https://docs.mongodb.com/manual/tutorial/specify-language-for-text-index/#specify-a-language-for-text-index
+    default_language?: string
 }
 
 /** http://mongodb.github.io/node-mongodb-native/3.0/api/Admin.html */
